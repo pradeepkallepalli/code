@@ -1,0 +1,4 @@
+USER_GROUP,ROLE
+RDO,hd.sec.common.dentrix::hygienistEndUser
+RDO,hd.sec.common.dentrix::dailyReportingEndUser
+RMO,hd.sec.common.dentrix::dailyReportingEndUser

@@ -1,0 +1,4 @@
+﻿USER_NAME,USER_TYPE,USER_GROUP,EMAIL_ADDRESS,CLIENT,LOCALE,TIME_ZONE,PRIORITY,STMT_MEMORY_LIMIT,EXTERNAL_IDENTITY,TERMINATION_DATE
+TESTER1,RESTRICTED,RMO,tester1@heartland.com,,,,,,tester1@heartland.com,
+TESTER2,RESTRICTED,RDO,tester2@heartland.com,,,,,,tester2@heartland.com,
+TESTER3,RESTRICTED,RMO,tester3@heartland.com,,,,,,tester3@heartland.com,

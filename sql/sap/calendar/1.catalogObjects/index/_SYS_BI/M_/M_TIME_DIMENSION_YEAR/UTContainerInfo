@@ -1,0 +1,174 @@
+[TABLE INFO]
+Container ID = 0xfe00000080
+Table name = M_TIME_DIMENSION_YEAR
+Schema name = _SYS_BI
+Partition ID = 0
+Table OID = 123
+Ptime OID = 147581
+Is history container = FALSE
+Is part of history = FALSE
+Row order spec type = RO_UNDEFINED
+NVM enabled 0
+Smart Rollover = FALSE
+NVM table preference NONE
+NVM partition preference NONE
+Table LoadUnitHint DEFAULT
+Partition LoadUnitHint DEFAULT
+Table NUMA node preference 
+Partition NUMA node preference 
+[Runtime Data]
+Index ID = HXE::_SYS_BI:M_TIME_DIMENSION_YEAR (t 123)
+Creation timestamp = 1564457094741
+Modify timestamp = 0
+Last merge timestamp = 1569681901293
+Last historization merge TID = 0
+Last replay log timestamp = 1569681853537
+Last correction timestamp = 0
+Last truncation timestamp = 0
+Last check timestamp = 0
+Last check error count = 0
+Raw count of main fragment = 51
+Next raw count of main fragment = 0
+Raw count of delta fragment = 0
+Last optimized compression row count = 0
+Changed row count since last optimize compression = 51
+Deleted rows in main fragment after last merge = 0
+Visible count of main fragment = 51
+Visible count of delta fragment = 0
+Estimated max memory size of main fragment = 34770
+Estimated max memory size of delta fragment = 25320
+Last estimated memory size = 64890
+Last estimated memory size time = 1569681901293
+Max row ID = 51
+Max hash ID = 4294967296
+Hash ID counters = 
+Max udiv0 = 51
+Max udiv1 = 0
+Next max udiv = 0
+Max merge CID = 0
+Single value cache = 
+[COLUMN INFO] 
+Column name = YEAR
+Column ID = 201
+Value class = 83
+Int digits = 0
+Fract digits = 0
+Row order position = 0
+LOB in memory thread hold size = 0
+Is concat = FALSE
+Is identity concat = FALSE
+Is paged = FALSE
+Is multi-valued = FALSE
+Is key attribute = TRUE
+Is series key = FALSE
+Is series key = FALSE
+Nvm status = NONE
+LoadUnitHint = DEFAULT
+Is LoadUnitAffinity paged = FALSE
+Column NUMA node preference = 
+[COLUMN INFO] 
+Column name = YEAR_INT
+Column ID = 202
+Value class = 73
+Int digits = 0
+Fract digits = 0
+Row order position = 0
+LOB in memory thread hold size = 0
+Is concat = FALSE
+Is identity concat = FALSE
+Is paged = FALSE
+Is multi-valued = FALSE
+Is key attribute = FALSE
+Is series key = FALSE
+Is series key = FALSE
+Nvm status = NONE
+LoadUnitHint = DEFAULT
+Is LoadUnitAffinity paged = FALSE
+Column NUMA node preference = 
+[COLUMN INFO] 
+Column name = IS_LEAP_YEAR
+Column ID = 203
+Value class = 73
+Int digits = 0
+Fract digits = 0
+Row order position = 0
+LOB in memory thread hold size = 0
+Is concat = FALSE
+Is identity concat = FALSE
+Is paged = FALSE
+Is multi-valued = FALSE
+Is key attribute = FALSE
+Is series key = FALSE
+Is series key = FALSE
+Nvm status = NONE
+LoadUnitHint = DEFAULT
+Is LoadUnitAffinity paged = FALSE
+Column NUMA node preference = 
+[COLUMN INFO] 
+Column name = $trex_udiv$
+Column ID = 5
+Value class = 73
+Int digits = 0
+Fract digits = 0
+Row order position = 0
+LOB in memory thread hold size = 0
+Is concat = FALSE
+Is identity concat = FALSE
+Is paged = FALSE
+Is multi-valued = FALSE
+Is key attribute = FALSE
+Is series key = FALSE
+Is series key = FALSE
+Nvm status = NONE
+LoadUnitHint = DEFAULT
+Is LoadUnitAffinity paged = FALSE
+Column NUMA node preference = 
+[COLUMN INFO] 
+Column name = $rowid$
+Column ID = 7
+Value class = 240
+Int digits = 18
+Fract digits = 0
+Row order position = 0
+LOB in memory thread hold size = 0
+Is concat = FALSE
+Is identity concat = FALSE
+Is paged = FALSE
+Is multi-valued = FALSE
+Is key attribute = FALSE
+Is series key = FALSE
+Is series key = FALSE
+Nvm status = NONE
+LoadUnitHint = DEFAULT
+Is LoadUnitAffinity paged = FALSE
+Column NUMA node preference = 
+[FRAGMENT INFO]
+Fragment ID = 3
+Fragment type = Active Main
+Fragment state = CURRENT
+Max column ID = 203
+Actual row count = 52
+Max Row ID = 51
+[FRAGMENT INFO]
+Fragment ID = 2
+Fragment type = Delta
+Fragment state = CURRENT
+Max column ID = 203
+Actual row count = 0
+Max Row ID = 51
+[MVCC INFO]
+Fragment type = Delta
+Number of pages = 0
+Number of row state blocks = 0
+Number of creation timestamp blocks = 0
+Number of deletion timestamp blocks = 0
+Number of free blocks = 0
+Current part of history = FALSE
+[MVCC INFO]
+Fragment type = Active Main
+Number of pages = 1
+Number of row state blocks = 1
+Number of creation timestamp blocks = 1
+Number of deletion timestamp blocks = 0
+Number of free blocks = 0
+Current part of history = FALSE

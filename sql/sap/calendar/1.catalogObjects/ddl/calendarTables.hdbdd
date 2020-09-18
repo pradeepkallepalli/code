@@ -1,0 +1,15 @@
+namespace hd.bi.db.ddl;
+@Schema: 'bi'
+context tables {
+
+    @Catalog.tableType: #COLUMN
+    Entity config {
+    	key group: String(32) not null;
+        key parameter: String(124) not null;
+    	selection_type: String(12);
+    	value_from: String(512);
+        value_to: String(512);
+        commnets: String(512);
+    };
+
+}; 

@@ -1,0 +1,35 @@
+namespace hd.bi.db.ddl;
+@Schema: 'bi'
+context securityAssignmentTables {
+
+    @Catalog.tableType: #COLUMN
+    Entity create_user_list {
+    	key user_name: String(256) not null;
+    	user_type: String(12);
+    	user_group: String(32);
+    	email_address: String(100);
+    	client: String(3);
+    	locale: String(2);
+    	time_zone: String(3);
+    	priority: String(1);
+    	stmt_memory_limit: Integer;
+    	external_identity: String(100);
+    	termination_indic: String(1);
+    };
+    
+    @Catalog.tableType: #COLUMN
+    @nokey
+    Entity user_group_role_mapping {
+        user_group: String(256) not null;
+        role: String(256);
+    };
+
+	@Catalog.tableType: #COLUMN
+    Entity user_log {
+    	key user_name: String(256) not null;
+		user_group: String(32);
+    	created_on: UTCTimestamp;
+		changed_on: UTCTimestamp;
+    };
+
+}; 

@@ -1,0 +1,12 @@
+namespace hd.bi.db.ddl;
+@Schema: 'bi'
+
+context globalTTs {
+
+     type ttOfficeAuth {
+            officeID : Integer;
+            userID : String(512);
+        };
+        
+
+};

@@ -1,0 +1,19 @@
+--Rollin Month with Better Performance - need to use M_TIME_DIMENSION_MONTH
+
+ SELECT DISTINCT "calMonth"
+		,"rollingMonthNo"
+	FROM (
+		SELECT DISTINCT "CALMONTH" AS "calMonth"
+			,((DENSE_RANK() OVER (ORDER BY "CALMONTH" DESC)) -1) * - 1 AS "rollingMonthNo"
+		FROM "_SYS_BI"."M_TIME_DIMENSION_MONTH"
+		WHERE  "CALMONTH" <= TO_VARCHAR(CURRENT_DATE,'YYYYMM')
+	
+			UNION
+	
+		SELECT DISTINCT "CALMONTH" AS "calMonth"
+				,(DENSE_RANK() OVER (ORDER BY "CALMONTH"))  AS "rollingMonthNo"
+		FROM "_SYS_BI"."M_TIME_DIMENSION_MONTH"
+		WHERE  "CALMONTH" > TO_VARCHAR(CURRENT_DATE,'YYYYMM')
+	)
+ORDER BY "calMonth" ASC;
+
