@@ -131,7 +131,7 @@ dmypy.json
 # custom files and packages from here
 
 # files
-*__init__.py
+
 
 # packages
 .idea
