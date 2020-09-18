@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# custom files and packages from here
+
+# files
+*__init__.py
+
+# packages
+.idea
